@@ -1,0 +1,50 @@
+/*===========================================
+================ CHUNK: BASE/RESET
+===========================================*/
+
+
+@use "../abstracts" as abstracts;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+button, input, select, textarea {
+    width : 190px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+p{
+    max-width: 550px;
+}
+
+a,
+a:active,
+a:hover,
+a:visited{
+    text-decoration: none;
+    color: abstracts.$main-clr;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+// @media (prefers-color-scheme: dark) {
+//     body { background: black; color:  #ddd; }
+// }
+  
+// @media (prefers-color-scheme: light) {
+//     body { background:  #eee; color: black; }
+// }

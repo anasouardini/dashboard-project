@@ -1,0 +1,13 @@
+@use "../abstracts" as vars;
+
+input{
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background-color: vars.$bg-clr;
+  max-width: 600px;
+
+  &:focus{
+    border: 1px solid vars.$main-clr;
+    outline: none;
+  }
+}
